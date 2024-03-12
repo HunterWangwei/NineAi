@@ -13,111 +13,110 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
 	<title>Ai Loading</title>
-  <script type="module" crossorigin src="/assets/index-20561e6c.js"></script>
-  <link rel="stylesheet" href="/assets/index-bf2d11d6.css">
+  <script type="module" crossorigin src="/assets/index-181d502b.js"></script>
+  <link rel="stylesheet" href="/assets/index-2532f4b0.css">
 </head>
+<style>
+	* {
+		box-sizing: border-box;
+	}
 
+	.main-container {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	body {
+		background: #fff;
+	}
+
+	.loading {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		z-index: 9999;
+	}
+
+	.loading-text {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		width: 100%;
+		height: 100px;
+		line-height: 100px;
+		color: #fff;
+
+	}
+
+	.loading-text span {
+		display: inline-block;
+		margin: 0 5px;
+		font-family: "Quattrocento Sans", sans-serif;
+	}
+
+	.loading-text span:nth-child(1) {
+		filter: blur(0px);
+		animation: blur-text 1.5s 0s infinite linear alternate;
+	}
+
+	.loading-text span:nth-child(2) {
+		filter: blur(0px);
+		animation: blur-text 1.5s 0.2s infinite linear alternate;
+	}
+
+	.loading-text span:nth-child(3) {
+		filter: blur(0px);
+		animation: blur-text 1.5s 0.4s infinite linear alternate;
+	}
+
+	.loading-text span:nth-child(4) {
+		filter: blur(0px);
+		animation: blur-text 1.5s 0.6s infinite linear alternate;
+	}
+
+	.loading-text span:nth-child(5) {
+		filter: blur(0px);
+		animation: blur-text 1.5s 0.8s infinite linear alternate;
+	}
+
+	.loading-text span:nth-child(6) {
+		filter: blur(0px);
+		animation: blur-text 1.5s 1s infinite linear alternate;
+	}
+
+	.loading-text span:nth-child(7) {
+		filter: blur(0px);
+		animation: blur-text 1.5s 1.2s infinite linear alternate;
+	}
+
+	@keyframes blur-text {
+		0% {
+			filter: blur(0px);
+		}
+
+		100% {
+			filter: blur(4px);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		body {
+			background: #121212;
+		}
+	}
+</style>
 <body class="dark:bg-black">
 	<div id="app">
-		<style>
-			* {
-				box-sizing: border-box;
-			}
-
-			.main-container {
-				width: 100vw;
-				height: 100vh;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-
-			body {
-				background: #fff;
-			}
-
-			.loading {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: transparent;
-				z-index: 9999;
-			}
-
-			.loading-text {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				margin: auto;
-				text-align: center;
-				width: 100%;
-				height: 100px;
-				line-height: 100px;
-				color: #fff;
-
-			}
-
-			.loading-text span {
-				display: inline-block;
-				margin: 0 5px;
-				font-family: "Quattrocento Sans", sans-serif;
-			}
-
-			.loading-text span:nth-child(1) {
-				filter: blur(0px);
-				animation: blur-text 1.5s 0s infinite linear alternate;
-			}
-
-			.loading-text span:nth-child(2) {
-				filter: blur(0px);
-				animation: blur-text 1.5s 0.2s infinite linear alternate;
-			}
-
-			.loading-text span:nth-child(3) {
-				filter: blur(0px);
-				animation: blur-text 1.5s 0.4s infinite linear alternate;
-			}
-
-			.loading-text span:nth-child(4) {
-				filter: blur(0px);
-				animation: blur-text 1.5s 0.6s infinite linear alternate;
-			}
-
-			.loading-text span:nth-child(5) {
-				filter: blur(0px);
-				animation: blur-text 1.5s 0.8s infinite linear alternate;
-			}
-
-			.loading-text span:nth-child(6) {
-				filter: blur(0px);
-				animation: blur-text 1.5s 1s infinite linear alternate;
-			}
-
-			.loading-text span:nth-child(7) {
-				filter: blur(0px);
-				animation: blur-text 1.5s 1.2s infinite linear alternate;
-			}
-
-			@keyframes blur-text {
-				0% {
-					filter: blur(0px);
-				}
-
-				100% {
-					filter: blur(4px);
-				}
-			}
-
-			@media (prefers-color-scheme: dark) {
-				body {
-					background: #121212;
-				}
-			}
-		</style>
 		<div class="main-container ">
 			<div class="loading">
 				<div class="loading-text" id="loading-text">
@@ -178,9 +177,4 @@
 
 <script>document.querySelector('html').classList.toggle('loading')
 </script>
-<script src="/console.js"></script>
-<!-- <script src="https://api.vvhan.com/api/yinghua"></script> -->
-<!-- <script src="https://api.vvhan.com/api/bolang"></script> -->
-<!-- <script src='https://api.vvhan.com/api/snow'></script> -->
-<!-- <script src="https://api.vvhan.com/api/denglong2"></script> -->
-<!-- <script src='https://api.vvhan.com/api/meihua'></script> -->
+
