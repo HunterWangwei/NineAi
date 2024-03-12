@@ -75,7 +75,7 @@ exports.PluginDefaultList = [
         pluginName: 'Midjourney文生图',
         pluginModelName: 'mj-chat',
         describe: '基于midjourney模型的AI绘图、同步官方、尽情发挥你的想象力吧！',
-        icon: 'logos:midjourney',
+        icon: 'material-symbols:draw-rounded',
         id: 3,
         pluginLayout: 'text',
         upload: false,
@@ -189,7 +189,7 @@ exports.PluginDefaultList = [
             {
                 pic: '',
                 type: 'text',
-                prompt: '帮我生成NineAi官方的二维码',
+                prompt: '帮我生成谷歌的二维码图片？',
                 logo: '',
             },
         ],
