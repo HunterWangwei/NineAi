@@ -1,6 +1,6 @@
 {
   "name": "service",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "",
   "author": "",
   "private": true,
@@ -86,7 +86,6 @@
     "redis": "^4.6.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
-    "sharp": "^0.32.6",
     "stream-to-buffer": "^0.1.0",
     "svg-captcha": "^1.4.0",
     "swagger-ui-express": "^4.6.2",
